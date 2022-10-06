@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/globalStyles.css">
+  <link rel="stylesheet" href="./styles/buttons.css">
+  <link rel="stylesheet" href="./styles/asides.css">
+  <link rel="stylesheet" href="./pages/home/index.css">
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <title>Webwomen</title>
+  <meta name="description" content="Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
+      Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil 
+      e ao redor do mundo?" />
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="container main-header">
+      <div class="info-box">
+        <h2>Webwomen</h2>
+        <h1>Lugar de mulher é onde ela quiser!</h1>
+        <div class="desc-box">
+          <p>
+            Está procurando oportunidades de estágio, emprego ou bolsas de estudo?
+            Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil e ao redor do mundo?
+          </p>
+          <p>Confere aqui embaixo o que temos pra você!</p>
+        </div>
+        <a href="#jobs" class="big-btn">Ir para seção das vagas</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="jobs" class="container main-content">
+      <section class="jobs-content">
+        <h3>Vagas</h3>
+        <ul class="cards"></ul>
+      </section>
+      <section class="jobs-selected">
+        <aside>
+          <div class="aside-content">
+            <div class="aside-header">
+              <h3>Vagas selecionadas</h3>
+            </div>
+            <div class="aside-body"></div>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </main>
+  <script src="./pages/home/jobsData.js"></script>
+  <script src="./scripts/renders.js"></script>
+  <script src="./pages/home/index.js"></script>
+</body>
+
+</html>

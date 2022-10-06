@@ -1,1 +1,150 @@
-/* Desenvolva sua estilização aqui... */
+main {
+    position: relative;
+    z-index: 1;
+    margin-top: 100vh;
+    background-color: var(--color-grey-5);
+}
+
+.header-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/img/womans.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-header .info-box {
+    width: 893px;
+    max-width: 100%;
+}
+
+.main-header .info-box h2 {
+    color: var(--color-grey-6);
+    margin-bottom: 3.75rem;
+}
+
+.main-header .info-box h1 {
+    color: var(--color-grey-3);
+    font-weight: 600;
+    font-size: var(--title-1);
+}
+
+.main-header .info-box .desc-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 2rem 0 3.75rem;
+}
+
+.main-header .info-box .desc-box p {
+    color: var(--color-grey-5);
+    font-weight: 400;
+    font-size: var(--title-5);
+    line-height: 2.25rem;
+}
+
+.main-header .info-box a {
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 3.375rem;
+    padding-bottom: 3.125rem;
+    background-color: var(--color-grey-5);
+}
+
+.main-content .jobs-content {
+    width: 59%;
+    max-width: 100%;
+}
+
+.main-content .jobs-selected {
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5.125rem;
+}
+
+.jobs-content h3 {
+    margin-bottom: 3.375rem;
+}
+
+.jobs-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.jobs-content .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 307px;
+    background-color: var(--color-grey-6);
+    border-radius: var(--radius-default);
+    padding: 2.375rem;
+}
+
+.jobs-content .card h4 {
+    color: var(--color-grey-1);
+    font-weight: 600;
+    font-size: var(--title-4);
+}
+
+.jobs-content .card .enterprise-info {
+    color: var(--color-grey-2);
+    font-weight: 400;
+    font-size: var(--text-3);
+    display: flex;
+    gap: 32px;
+    margin: 1.125rem 0 1.75rem;
+}
+
+.jobs-content .card p {
+    color: var(--color-grey-2);
+    font-weight: 400;
+    font-size: var(--text-2);
+    line-height: 2rem;
+    margin-bottom: 1.15rem;
+}
+
+.jobs-content .card .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jobs-content .card .footer .tags {
+    display: flex;
+    gap: 15px;
+}
+
+.jobs-content .card .footer .modality-tag {
+    height: 1.875rem;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.jobs-content .card .footer button {
+    height: 2.375rem;
+    display: flex;
+    align-items: center;
+}
