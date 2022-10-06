@@ -65,8 +65,8 @@ const removeFromSelctedJobs = (id) => {
 
 const reloadLastActivity = () => {
     const jobsObj = JSON.parse(localStorage.getItem("chosenJobs"))
-    selectedJobs = jobsObj;
     if (jobsObj !== null) {
+        selectedJobs = jobsObj;
         renderSelectedJobsCard(jobsObj);
         const btn = document.querySelectorAll(".sendJob");
         selectedJobs.forEach((elem) => {
